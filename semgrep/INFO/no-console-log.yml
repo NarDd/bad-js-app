@@ -1,7 +1,7 @@
 rules:
   - id: no-console-log
     languages:
-      - js
+      - ts
     pattern: console.log('...')
     message: Do not use console.log
     severity: INFO
