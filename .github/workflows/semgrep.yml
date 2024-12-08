@@ -22,4 +22,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ls
-      - run: semgrep --config ./semgrep/INFO/no-console-log.yml
+      - run: semgrep ci --config ./semgrep/INFO/no-console-log.yml
