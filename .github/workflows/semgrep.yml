@@ -7,9 +7,9 @@ on:
       - master
     paths:
       - .github/workflows/semgrep.yml
-  schedule:
-    # random HH:MM to avoid a load spike on GitHub Actions at 00:00
-    - cron: 17 17 * * *
+  # schedule:
+  #   # random HH:MM to avoid a load spike on GitHub Actions at 00:00
+  #   - cron: 17 17 * * *
 name: Semgrep
 jobs:
   semgrep:
@@ -22,4 +22,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ls
-      - run: semgrep ci --config ./semgrep/INFO/no-console-log.yml
+      - run: semgrep ci
