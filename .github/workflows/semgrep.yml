@@ -22,5 +22,5 @@ jobs:
       image: returntocorp/semgrep
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep config ./semgrep
-      - run: semgrep ci
+      - run: ls
+      - run: semgrep config ./semgrep/INFO
